@@ -8,7 +8,7 @@ import Foundation
 
 
 // print log with optional value
-public func pl(_ value: Any?, file: String = #file, lineNumber: Int = #line) {
+public func pl(_ value: Any? = nil, file: String = #file, lineNumber: Int = #line) {    
     #if DEBUG
         let fName = fileName(from: file)
         
